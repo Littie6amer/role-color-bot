@@ -1,5 +1,7 @@
 # role-save-bot
 
+![](https://i.imgur.com/KFll7vQ.png)
+
 To install dependencies:
 
 ```bash
