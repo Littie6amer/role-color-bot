@@ -1,4 +1,4 @@
-import { Client, GatewayIntentBits, AttachmentBuilder } from "discord.js"
+import { Client, GatewayIntentBits, AttachmentBuilder, ActivityType } from "discord.js"
 import { config } from "dotenv"
 config()
 
@@ -6,7 +6,14 @@ const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages
-    ]
+    ],
+    presence: {
+        status: "online",
+        activities: [{
+            type: ActivityType.Watching,
+            name: "@me help"
+        }]
+    }
 })
 
 let prefix = "??"
