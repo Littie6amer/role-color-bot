@@ -51,7 +51,7 @@ client.on("messageCreate", async (m) => {
             return await m.reply("Maybe try attaching a json file with role colors like:\n```json\n{\n   \"123\": 123\n}```").catch(() => null)
         const attachment = m.attachments.first()!
         if (attachment.size > 50_000) // comment this out to remove size limit to files, this will leave the bot vulnerable to people using it to download files that are way too large
-            return await m.reply("The file is too big. If this is unexpected, please contact `@littie`\nor you can self host this bot using the code [here](https://github.com) and increase/remove the size limit").catch(() => null)
+            return await m.reply("The file is too big. If this is unexpected, please contact `@littie`\nor you can self host this bot using the code [here](https://github.com/Littie6amer/role-color-bot) and increase/remove the size limit").catch(() => null)
         if (!args.length || args.join(" ").toLowerCase() != "yes i am sure")
             return await m.reply("Are you sure? Confirm with `@me load yes i am sure` with the file attached").catch(() => null)
 
@@ -98,7 +98,7 @@ client.on("messageCreate", async (m) => {
     }
 
     if (command == "help") {
-        return m.reply("### There are 2 commands:\n`save` - Save role colours to a JSON file sent by bot.\n`load` - Load role colours from a JSON file.")
+        return m.reply("### There are 2 commands:\n`save` - Save role colours to a JSON file sent by bot.\n`load` - Load role colours from a JSON file.\nGithub: https://github.com/Littie6amer/role-color-bot")
     }
 
     return await m.reply({ content: "Not a command." }).catch(() => null)
