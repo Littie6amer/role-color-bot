@@ -1,0 +1,2 @@
+BOT_TOKEN=abc
+USER_ID=0 # Your User ID if you only want the bot to respond to you, if 0 it will check for Manage Server permissions

@@ -1,0 +1,21 @@
+# role-save-bot
+
+To install dependencies:
+
+```bash
+bun install
+```
+
+To env:
+
+```bash
+cat env-example.txt > .env
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
